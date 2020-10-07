@@ -1,0 +1,38 @@
+---
+title: "Developing Data Products Course Project"
+author: "ZTH"
+date: "2020/10/4"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Diamond Analysis Report
+- This is a report created by Rmarkdown slidy presentation
+- In this R slidy presentation, the dataset I choose and the usage of my shiny App are showed as follows
+- Use PageUp and PageDown to traverse all the slides
+
+
+## The Dataset I Choose in My Shiny Application
+In this application, I choose diamonds dataset for analysis.Here is a brief overview of it.
+```{r,warning=FALSE}
+library(ggplot2)
+data("diamonds")
+head(diamonds,5)
+```
+
+
+## What My Shiny Application is about
+- The price of diamonds have correlations with many attributes in the dataset.
+- The relationship between variable "price" and "caret" is plotted in this App, with scatter plot and regression line.
+- The attributes "cut" and "clarity" are factor variables. They are used for choosing the specific points showed in the plot above.
+- You can use choice box to choose the specific cut and clarity.
+
+## Online Shiny App and Github repo
+- Here is my Shiny App published on server  
+<https://zth123456.shinyapps.io/developing_data_products/>  
+- Here is my Github repo of this whole course project  
+<https://github.com/997-icu/Course-Project-Shiny-Application-and-Reproducible-Pitch>
+
+
